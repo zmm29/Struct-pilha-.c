@@ -19,7 +19,7 @@ int push(tpilha *p, tdado x){
 	return 1;
 
 }
-//------------------------------------------- FunÁ„o pop n„o pode estar vazia
+//------------------------------------------- Fun√ß√£o pop n√£o pode estar vazia
 // Criar uma variavel auxiliar, recebe quem ta no topo, devolve um valor que esta na pila
 
 tdado pop(tpilha *p){
@@ -27,7 +27,7 @@ tdado pop(tpilha *p){
 	aux = p->pilha[p->topo];
 	p->topo--;
 	return aux;
-	// quando chama a pop ela sempre mostra o dado que ela est· removendo
+	// quando chama a pop ela sempre mostra o dado que ela est√° removendo
 
 }
 //------------------------------------------- 
@@ -41,7 +41,7 @@ int isEmpty(tpilha p){
 void mostraPilha(tpilha p){
 	while (p.topo != -1){
 		printf ("%d |", p.pilha[p.topo]); //mostra o valor do topo]
-		p.topo--; //desce a posiÁ„o
+		p.topo--; //desce a posi√ß√£o
 	}//fim while
 	printf("\n");
 }
@@ -83,7 +83,7 @@ int main(){
 					scanf("%d", &mostraPilha);
 					
 			break;
-			case 0: printf("Saindo .... ;(\n)";]
+			case 0: printf("Saindo .... ;(\n");
 			mostraPilha(p1);
 			break;
 			
