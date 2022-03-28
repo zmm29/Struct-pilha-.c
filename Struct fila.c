@@ -30,6 +30,12 @@ tdado pop(tpilha *p){
 	// quando chama a pop ela sempre mostra o dado que ela está removendo
 
 }
+tdado top(tpilha *p){
+	tdado aux;
+	aux = p->pilha[p->topo];
+	p->topo;
+	return aux;
+}
 //------------------------------------------- 
 int isEmpty(tpilha p){
 	if(p.topo == -1)
@@ -79,8 +85,10 @@ int main(){
 					else				
 					printf("Dado removido %d :(\n", pop(&p1));
 			break;
-			case 3: printf("Dados da pilha: ", p1.topo);
-					mostraPilha(p1);
+			case 3: if(isEmpty(p1) ==1)
+					printf("Dado inexistente :)\n");
+					else				
+					printf("Dado do Topo: %d \n", top(&p1));
 					
 			break;
 			case 0: printf("Saindo .... ;(\n");
@@ -88,7 +96,7 @@ int main(){
 			break;
 			
 		}
-		getch();
+		getch(); 
 		system("cls");
 		}while(op!=0);
 }
