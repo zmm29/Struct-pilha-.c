@@ -74,17 +74,17 @@ int main(){
 					else				
 					printf("Stack overflow :(\n)");
 			break;
-			case 2: if(isEmpty(p1) ==1)
+			case 2: 	if(isEmpty(p1) ==1)
 					printf("Dado inexistente :)\n");
 					else				
 					printf("Dado removido %d :(\n", pop(&p1));
 			break;
-			case 3: printf("Dados da pilha");
-					scanf("%d", &mostraPilha);
+			case 3: printf("Dados da pilha: ");
+					mostraPilha(p1);
 					
 			break;
 			case 0: printf("Saindo .... ;(\n");
-			mostraPilha(p1);
+			
 			break;
 			
 		}
@@ -92,4 +92,3 @@ int main(){
 		system("cls");
 		}while(op!=0);
 }
-
