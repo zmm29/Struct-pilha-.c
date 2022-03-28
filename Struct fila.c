@@ -63,9 +63,9 @@ int main(){
 	int op; 
 	inicializa (&p1);
 	do{
-		op = menu();
+		printf("Topo: %d \n ", p1.topo);
 		mostraPilha(p1);
-		printf("Topo:%d\n",p1.topo);		
+		op = menu();		
 		switch (op){
 			case 1: printf("Dado para inserir: ");
 					scanf("%d", &x);
@@ -74,12 +74,12 @@ int main(){
 					else				
 					printf("Stack overflow :(\n)");
 			break;
-			case 2: 	if(isEmpty(p1) ==1)
+			case 2: if(isEmpty(p1) ==1)
 					printf("Dado inexistente :)\n");
 					else				
 					printf("Dado removido %d :(\n", pop(&p1));
 			break;
-			case 3: printf("Dados da pilha: ");
+			case 3: printf("Dados da pilha: ", p1.topo);
 					mostraPilha(p1);
 					
 			break;
